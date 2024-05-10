@@ -2,10 +2,11 @@
 {
     public class Circle
     {
-        public bool IsPointInside(MyPoint point)
+        
+        public bool IsPointInside(Point2D point2D)
         {
 
-            if (point.GetDistanceFromAnotherPoint(new MyPoint(0, 0)) <= 1)
+            if (point2D.GetDistanceFromAnotherPoint(new Point2D(0, 0)) <= 1)
             {
                 return true;
             }

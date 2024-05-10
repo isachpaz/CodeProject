@@ -12,7 +12,7 @@ namespace PiCalculatorTests
             double x = 0.3;
             double y = 0.2;
 
-            var point = new MyPoint(x, y);
+            var point = new Point2D(x, y);
             var circle = new Circle();
             bool isPointInside = circle.IsPointInside(point);
 
@@ -23,7 +23,7 @@ namespace PiCalculatorTests
         public void CheckPointOutsideCircle()
         {
 
-            var point = new MyPoint(10, 10);
+            var point = new Point2D(10, 10);
             var circle = new Circle();
             bool isPointInside = circle.IsPointInside(point);
 
