@@ -13,7 +13,10 @@ namespace PiCalculatorTests
             double y = 0.2;
 
             var point = new Point2D(x, y);
-            var circle = new Circle();
+            var circleCenter = new Point2D(0, 0);
+            var radiusInCM = 1.0;
+            var circle = new Circle(circleCenter, radiusInCM);
+
             bool isPointInside = circle.IsPointInside(point);
 
             Assert.AreEqual(true, isPointInside);
@@ -24,7 +27,9 @@ namespace PiCalculatorTests
         {
 
             var point = new Point2D(10, 10);
-            var circle = new Circle();
+            var circleCenter = new Point2D(0, 0);
+            var radiusInCM = 1.0;
+            var circle = new Circle(circleCenter, radiusInCM);
             bool isPointInside = circle.IsPointInside(point);
 
             Assert.AreEqual(false, isPointInside);
